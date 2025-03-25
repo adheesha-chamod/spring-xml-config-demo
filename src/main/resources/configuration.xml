@@ -5,5 +5,17 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="org.adheesha.User"/>
+    <!--  default scope: singleton  -->
+    <bean id="user" class="org.adheesha.User">
+        <!--    setter injection for primitives   -->
+        <property name="username" value="defaultUser" />
+        <property name="password" value="12345678" />
+
+        <!--    setter injection for objects   -->
+        <property name="product" ref="product" />
+     </bean>
+
+    <bean id="customer" class="org.adheesha.Customer" scope="prototype" />
+
+    <bean id="product" class="org.adheesha.Product"/>
 </beans>

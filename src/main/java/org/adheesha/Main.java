@@ -10,8 +10,19 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("configuration.xml");
 //        printBeans(context);
 
+        /**
+         * get bean by id specified in configuration.xml
+         */
         User user = (User) context.getBean("user");
-        user.sayHello();
+
+//        user.sayHello();
+
+//        user.setUsername("john");
+//        user.setPassword("john@1234");
+//        System.out.println(user.getUsername());
+//        System.out.println(user.getPassword());
+
+        user.buyProduct();
     }
 
     public static void printBeans(ApplicationContext context) {
