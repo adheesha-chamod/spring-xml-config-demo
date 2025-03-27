@@ -5,7 +5,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--  default scope: singleton  -->
+    <!--  default scope for beans: singleton  -->
     <bean id="user" class="org.adheesha.User">
         <!--    setter injection for primitives   -->
         <property name="username" value="defaultUser" />
@@ -13,9 +13,14 @@
 
         <!--    setter injection for objects   -->
         <property name="product" ref="product" />
-     </bean>
+    </bean>
 
     <bean id="customer" class="org.adheesha.Customer" scope="prototype" />
 
-    <bean id="product" class="org.adheesha.Product"/>
+    <bean id="product" class="org.adheesha.Product">
+        <!--    constructor injection    -->
+        <constructor-arg name="id" value="001" />
+        <constructor-arg name="name" value="defaultProduct" />
+        <constructor-arg name="price" value="0.00" />
+    </bean>
 </beans>

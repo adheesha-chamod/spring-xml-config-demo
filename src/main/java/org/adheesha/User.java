@@ -19,17 +19,17 @@ public class User {
     }
 
     public void setUsername(String username) {
-        System.out.println("Setting username: " + username);
+//        System.out.println("Setting username: " + username);
         this.username = username;
     }
 
     public void setPassword(String password) {
-        System.out.println("Setting password: " + password);
+//        System.out.println("Setting password: " + password);
         this.password = password;
     }
 
     public void setProduct(Product product) {
-        System.out.println("Setting product: " + product);
+//        System.out.println("Setting product: " + product);
         this.product = product;
     }
 
