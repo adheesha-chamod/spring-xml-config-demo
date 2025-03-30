@@ -8,7 +8,18 @@ public class Buyer {
         cardPay.pay();
     }
 
-    public void setCardPay(Payable cardPay) {
-        this.cardPay = cardPay;
+    public void setCardPay(Payable paymentMethod) {
+        this.cardPay = paymentMethod;
     }
+
+
+//    private Payable cashPay;
+//
+//    public void pay() {
+//        cashPay.pay();
+//    }
+//
+//    public void setCashPay(Payable paymentMethod) {
+//        this.cashPay = paymentMethod;
+//    }
 }

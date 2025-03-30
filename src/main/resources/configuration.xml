@@ -29,4 +29,10 @@
     <bean id="cashPay" class="org.adheesha.CashPay" />
 
     <bean id="buyer" class="org.adheesha.Buyer" autowire="byName" />
+
+    <bean id="primaryDBConnection" class="org.adheesha.PrimaryDBConnection" primary="true" />
+
+    <bean id="backupDBConnection" class="org.adheesha.BackupDBConnection" />
+
+    <bean id="dbConnector" class="org.adheesha.DBConnector" autowire="byType" />
 </beans>

@@ -28,8 +28,13 @@ public class Main {
 //        Product product = (Product) context.getBean("product");
 //        System.out.printf("id: %s, name: %s, price: %.2f%n", product.getId(), product.getName(), product.getPrice());
 
-        Buyer buyer = (Buyer) context.getBean("buyer");
-        buyer.pay();
+
+//        Buyer buyer = (Buyer) context.getBean("buyer");
+//        buyer.pay();
+
+
+//        DBConnector connector = (DBConnector) context.getBean("dbConnector");
+//        connector.connectToDatabase();
     }
 
     public static void printBeans(ApplicationContext context) {
