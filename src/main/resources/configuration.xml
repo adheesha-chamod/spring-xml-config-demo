@@ -32,7 +32,7 @@
 
     <bean id="primaryDBConnection" class="org.adheesha.PrimaryDBConnection" primary="true" />
 
-    <bean id="backupDBConnection" class="org.adheesha.BackupDBConnection" />
+    <bean id="backupDBConnection" class="org.adheesha.BackupDBConnection" lazy-init="true" />
 
     <bean id="dbConnector" class="org.adheesha.DBConnector" autowire="byType" />
 </beans>
