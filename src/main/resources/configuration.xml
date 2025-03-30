@@ -36,5 +36,9 @@
 
     <bean id="dbConnector" class="org.adheesha.DBConnector" autowire="byType" />
 
-    <bean class="org.adheesha.Cart" />
+    <bean id="cart" class="org.adheesha.Cart">
+        <property name="item">
+            <bean class="org.adheesha.Item"/>
+        </property>
+    </bean>
 </beans>
