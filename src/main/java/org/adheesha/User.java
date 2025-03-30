@@ -2,9 +2,10 @@ package org.adheesha;
 
 public class User {
 
-    String username;
-    String password;
-    Product product;
+    private String username;
+    private String password;
+    private Product product;
+
 
     User () {
         System.out.println("User object is created!");

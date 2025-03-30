@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("configuration.xml");
-//        printBeans(context);
+        printBeans(context);
 
 
         /**
@@ -25,8 +25,11 @@ public class Main {
 //        user.buyProduct();
 
 
-        Product product = (Product) context.getBean("product");
-        System.out.printf("id: %s, name: %s, price: %.2f%n", product.getId(), product.getName(), product.getPrice());
+//        Product product = (Product) context.getBean("product");
+//        System.out.printf("id: %s, name: %s, price: %.2f%n", product.getId(), product.getName(), product.getPrice());
+
+        Buyer buyer = (Buyer) context.getBean("buyer");
+        buyer.pay();
     }
 
     public static void printBeans(ApplicationContext context) {

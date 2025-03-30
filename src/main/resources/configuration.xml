@@ -23,4 +23,10 @@
         <constructor-arg name="name" value="defaultProduct" />
         <constructor-arg name="price" value="0.00" />
     </bean>
+
+    <bean id="cardPay" class="org.adheesha.CardPay" />
+
+    <bean id="cashPay" class="org.adheesha.CashPay" />
+
+    <bean id="buyer" class="org.adheesha.Buyer" autowire="byName" />
 </beans>
