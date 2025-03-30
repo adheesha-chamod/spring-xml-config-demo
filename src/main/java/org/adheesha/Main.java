@@ -35,6 +35,12 @@ public class Main {
 
 //        DBConnector connector = (DBConnector) context.getBean("dbConnector");
 //        connector.connectToDatabase();
+
+        /**
+         * get bean by type
+         */
+        Cart cart = context.getBean(Cart.class);
+        cart.addToCart();
     }
 
     public static void printBeans(ApplicationContext context) {

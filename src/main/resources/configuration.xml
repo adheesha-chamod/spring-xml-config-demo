@@ -35,4 +35,6 @@
     <bean id="backupDBConnection" class="org.adheesha.BackupDBConnection" lazy-init="true" />
 
     <bean id="dbConnector" class="org.adheesha.DBConnector" autowire="byType" />
+
+    <bean class="org.adheesha.Cart" />
 </beans>

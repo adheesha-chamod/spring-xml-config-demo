@@ -7,9 +7,9 @@ public class User {
     private Product product;
 
 
-    User () {
-        System.out.println("User object is created!");
-    }
+//    User () {
+//        System.out.println("User object is created!");
+//    }
 
     public void sayHello() {
         System.out.println("Hello, World! - User");

@@ -6,9 +6,9 @@ public class Product {
     private String name;
     private double price;
 
-    Product() {
-        System.out.println("Product object is created! - Product()");
-    }
+//    Product() {
+//        System.out.println("Product object is created! - Product()");
+//    }
 
     public Product(String id, String name, double price) {
         System.out.println("Product object is created! - Product(id, name, price)");
